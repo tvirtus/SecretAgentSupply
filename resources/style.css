@@ -1,11 +1,12 @@
 /*Universal*/
 .flex-screen {
-    width: 100%;
+    width: 100vw;
     display: flex;
 }
 
 .flex-content {
-    width: 960px;
+    width: 90%;
+    max-width: 960px;
     display: flex;
 }
 
@@ -61,7 +62,7 @@ html {
     padding-bottom: .25rem; 
 }
 
-#banner-textbox h1 {
+#banner-textbox p {
     font-size: 2rem;
 }
 
@@ -83,6 +84,10 @@ html {
     text-decoration: none;
 }
 
+#nav-menu {
+    display: none;
+}
+
 /*Products*/
 #products {
     justify-content: center;
@@ -90,6 +95,7 @@ html {
 
 #products-container {
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .product {
@@ -97,6 +103,7 @@ html {
     overflow: hidden;
     margin-top: 3rem;
     width: 30%;
+    height: auto;
 }
 
 .product img {
@@ -152,4 +159,89 @@ html {
 
 #copyright-container p {
     align-self: center;
+}
+
+
+/*Screens smaller than 1024px and portrait orientation*/
+@media only screen and (max-width: 1024px) and (orientation: portrait) { 
+    /*  Product  */
+    .product {
+        width: 47%;
+    }
+    
+    /*  Hidding thermal glasses  */
+    #thermal-glasses {
+        display: none;
+    }
+    
+    /*  Displaying 'Menu' instead of entire nav  */
+    #header-nav-container {
+        justify-content: center;
+    }
+    
+    #nav-menu {
+        display: block;
+    }
+    
+    a:not(#nav-menu) {
+        display: none;
+    }
+}
+
+/*Screens smaller than 470px and portrait orientation*/
+@media only screen and (max-width: 470px) {
+    .flex-content {
+        width: 100vw;
+    }
+    
+    /*  Banner  */
+    #banner {
+        height: 15rem;
+    }
+    
+    /*  Banner text  */
+    #banner-textbox {
+        margin-top: 10rem;
+        padding: 1rem 0rem 1rem 2rem;
+        width: 100%;
+    }
+    
+    #banner-textbox h2 {
+        font-size: .77rem;
+    }
+    
+    #banner-textbox p span {
+        display: inline;
+        font-size: 1rem;
+    }
+    
+    /*  Product  */
+    #products-container {
+        width: 90%;
+    }
+    
+    .product {
+        width: 100%;
+    }
+    
+    /*  Hidding thermal glasses  */
+    #cellular-watch {
+        display: none;
+    }
+    
+    /*  Company info  */
+    #company-info-container {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .info {
+        width: 100%;
+        margin: .25rem 0rem;
+    }
+    
+    /*  Footer  */
+    #copyright-container {
+        justify-content: center;
+    }
 }
