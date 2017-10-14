@@ -19,12 +19,13 @@ html {
 /*Header top bar*/
 #header-top-bar {
     background-color: black;
-    padding: .66rem 0.5rem;
+/*    padding: .66rem 0rem .66rem 0.5rem;*/
     justify-content: center;
 }
 
 /*Header top bar container*/
 #header-top-bar-container {
+    padding: .66rem 0.5rem;
     justify-content: flex-start;
 }
 
