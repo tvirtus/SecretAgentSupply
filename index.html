@@ -2,24 +2,28 @@
 <html>
     <head>
         <title>Secret Agent Supply Inc.</title>
-        <link rel="stylesheet" typ="text/css" href="resources/reset.css" />
-        <link rel="stylesheet" typ="text/css" href="resources/style.css" />
+        <link rel="stylesheet" type="text/css" href="resources/reset.css" />
+        <link rel="stylesheet" type="text/css" href="resources/style.css" />
     </head>
     <body>
 <!--    Header    -->
-        <header class="flex">
-            <div id="logo">
-                <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/logo.png">
-            </div>
-            <h2 id="title">SECRET AGENT SUPPLY INC.</h2>
-            <section id="intro" class="flex">
-                <div id="intro-banner">
-                    <div id="intro-textbox">
-                        <h3>NEW ARRIVAL</h3>
-                        <h1>SPORT BIKES AND MOTORCYCLES</h1>
-                    </div>  
+        <header>
+             <div id="header-top-bar">
+                <div id="header-top-bar-container" class="">
+                    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/logo.png">
+                    <span id="title">SECRET AGENT SUPPLY INC.</span>
                 </div>
-                <nav id="top-nav">
+            </div>
+            <div id="banner">
+                <div id="banner-text-container">
+                    <div id="banner-textbox">
+                        <h2>NEW ARRIVAL</h2>
+                        <h1>SPORT BIKES AND<br />MOTORCYCLES</h1>
+                    </div> 
+                </div>
+            </div>
+            <div id="header-nav">
+                <nav id="header-nav-container">
                     <a href="#">Eyewear</a>
                     <a href="#">Apparel</a>
                     <a href="#">Gadgets</a>
@@ -27,40 +31,48 @@
                     <a href="#">Classes</a>
                     <a href="#">Contact</a>
                 </nav>
-            </section>
+            </div>
         </header>
 <!--    Main    -->
-        <main>            
+        <main>   
 <!--     Product section       -->
-            <section id="product" class="flex">
-                <div class="product">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/pen.png" alt="explodin-pen">
-                    <h3 class="product-name">Exploding Pen</h3>
-                </div>
-                <div class="product">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/watch.png" alt="cellular-watch">
-                    <h3 class="product-name">Cellular Watch</h3>
-                </div>
-                <div class="product">
-                    <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/glasses.png" alt="thermal-glasses">
-                    <h3 class="product-name">Thermal Glasses</h3>
-                </div>
-            </section>
-<!--     Company info section       -->
-            <section id="info">
-                <div id="location">
-                    <h3>Location</h3>
-                    <p>-47.346436, 84.32354</p>
-                </div>
-                <div id="hours">
-                    <h3>Hours</h3>
-                    <p>0800 - 1800</p>
+            <div id="products">
+                <section id="products-container" >
+                    <div class="product">
+                        <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/pen.png" alt="explodin-pen">
+                        <h3 class="product-name">Exploding Pen</h3>
+                    </div>
+                    <div class="product">
+                        <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/watch.png" alt="cellular-watch">
+                        <h3 class="product-name">Cellular Watch</h3>
+                    </div>
+                    <div class="product">
+                        <img src="https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/secret-agent-supply/resources/images/glasses.png" alt="thermal-glasses">
+                        <h3 class="product-name">Thermal Glasses</h3>
+                    </div>
+                </section>
+            </div>
+<!--     Company info section      -->
+            <section id="company-info">
+                <div id="company-info-container">
+                    <div class="info">
+                        <h3>Location</h3>
+                        <p>-47.346436, 84.32354</p>
+                    </div>
+                    <div class="info">
+                        <h3>Hours</h3>
+                        <p>0800 - 1800</p>
+                    </div>
                 </div>
             </section>
         </main>
 <!--    Footer    -->
         <footer>
-            Copyright Secret Agent Supply Inc.
+            <div id="copyright">
+                <div id="copyright-container">
+                    <p>Copyright Secret Agent Supply Inc.</p>
+                </div>
+            </div>
         </footer>
     </body>
 </html>
