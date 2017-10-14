@@ -1,3 +1,14 @@
+/*Universal*/
+.flex-screen {
+    width: 100%;
+    display: flex;
+}
+
+.flex-content {
+    width: 960px;
+    display: flex;
+}
+
 html {
     font-size: 18px;
     font-family: Helvetica;
@@ -8,17 +19,12 @@ html {
 #header-top-bar {
     background-color: black;
     padding: .66rem 0.5rem;
-    width: 100%;
-    display: flex;
     justify-content: center;
 }
 
 /*Header top bar container*/
 #header-top-bar-container {
-/*    */
-    display: flex
     justify-content: flex-start;
-    width: 960px; 
 }
 
 /*Logo*/
@@ -31,17 +37,12 @@ html {
 #banner {
     background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
     height: 25rem;
-    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
     justify-content: center;
 }
 
 #banner-text-container {
-/*    */
-    width: 960px;
-    display: flex;
     justify-content: flex-start;
 }
 
@@ -66,16 +67,11 @@ html {
 
 /*Header navigation*/
 #header-nav {
-    display: flex;
     justify-content: center;
     background-color: firebrick;
-    width: 100%;
 }
 
 #header-nav-container {
-/*    */
-    width: 960px;
-    display: flex;
     justify-content: space-between;
     padding: .75rem 0rem;
 }
@@ -89,15 +85,10 @@ html {
 
 /*Products*/
 #products {
-    display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 #products-container {
-/*    */
-    width: 960px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -128,15 +119,10 @@ html {
 #company-info {
     margin-top: 3rem;
     margin-bottom: 4rem;
-    display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 #company-info-container {
-/*    */
-    width: 960px;
-    display: flex;
     justify-content: space-between;
 }
 
@@ -157,16 +143,10 @@ html {
 #copyright {
     background-color: black;
     height: 5rem;
-    
-    display: flex;
     justify-content: center;
-    width: 100%;
 }
 
 #copyright-container {
-/*    */
-    width: 960px;
-    display: flex;
     justify-content: flex-start;
 }
 
